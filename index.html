@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>    
-        <img src="imges/SiteLogo.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Team</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner">
-        <div class="right">
-            <p>SEE AND DIE</p>
-            <h1>Moscow</h1>
-        </div>
-        <div class="left">
-            <img src="imges/image 36.png" alt="">
-            <div class="column-pic">
-                <img src="imges/image 37.png" alt="">
-                <img src="imges/Rectangle 89.png" alt="">
+    <div class="header">
+        <div class="col-12 col-md-8 col-lg-8 cs-content">
+            <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/SiteLogo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 cs-ul">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Team</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="right">
+                    <p>SEE AND DIE</p>
+                    <h1>Moscow</h1> 
+                </div>
+                <div class="left">
+                    <img src="assets/image 36.jpg" alt="">
+                </div>
             </div>
         </div>
+        <div class="col-12 col-md-4 col-lg-4  cs-pic">
+            <img src="assets/image 37.jpg" alt="">
+            <img src="assets/Rectangle 89.jpg" alt="">
+        </div>
     </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

@@ -1,82 +1,54 @@
-body{
-    overflow: hidden;
+*{
+    margin: 0;
+    padding: 0;
 }
-header{
-    display: flex;
-    align-items: center;
-    margin: 0px 10px;
-}
-header>nav>ul{
-    display: flex;justify-content: center;
-}
-header>nav>ul>li>a{
-    text-decoration: none;
-    color: black;
-}
-header>nav>ul>li{
-    list-style-type: none;
-    margin: 0px 20px;
-    font-family: sans-serif;
-}
-header>nav{
+.cs-ul{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-right: 30px;
+    gap:20px;
 }
-.banner{
+.header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0px 10px;
+    height: 80%;
+    flex-wrap: wrap;
 }
-.banner>.left{
-    display: flex;
+.header>.cs-pic>img{
+    height: 41%;
+    width: 100%;
+    margin-bottom: 7px;
 }
-.banner>.left>.column-pic{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    height: 100vh;
-}
-.banner>.left>img{
-    height: 90vh;
-    margin-right: 6px;
-}
-.banner>.left>.column-pic>img{
-    height: 45vh;
-}
-
 .banner>.right>p{
+    color: #000;
     font-weight: 300;
     font-size: 26px;
     font-family: sans-serif;
 }
 .banner>.right>h1{
+    color: #000;
     font-weight: 700;
     font-size: 96px;
     font-family: sans-serif;
 }
-/* @media only screen and(max-width:900px){
-    body{
-        overflow: visible;
+.banner>.left>img{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.cs-content>.banner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 78%;
+    justify-content: space-around;
+}
+
+@media  only  screen and(max-width:1169px){
+    .header{
+        display: block;
     }
-    .banner>.left{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .banner>.left>.column-pic{
-        display: flex;
+    .cs-pic{
         flex-direction: row;
-        gap: 4px;
-        height: 100vh;
-        flex-wrap: wrap;
     }
-    .banner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-} */
+}
